@@ -1,14 +1,19 @@
 import { Banner } from "../../components/Banner";
 import { NavBar } from "../../components/Nav";
-import { Container } from "./styles";
+import { SelfPromotedComponent } from "../../components/SelfPromot";
+import { Container, Box, Content } from "./styles";
 
 export function Home() {
   return (
     <Container>
-      <NavBar/>
+      <Banner />
 
-      <Banner/>
-        
+      <Box>
+        <NavBar />
+
+        <SelfPromotedComponent/>
+      </Box>
+
     </Container>
   )
 }

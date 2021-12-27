@@ -39,13 +39,17 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     html, body, #root {
-        height: 100%;
+        height: 100vh;
         width : 100%;
         scroll-behavior: smooth;
     }
 
-    h1, h2, h3, h4, h5, span, button, p  {
-        font-family: 'Inter', sans-serif;
+    h1, h2, h3, h4, h5 {
+        color: #ffffff;
+    }
+
+     span, button, p  {
+        font-family: 'Roboto', sans-serif;
         color: #949494;
     }
 
@@ -69,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     *, button, input {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-decoration: none;
     }
 

@@ -1,17 +1,13 @@
 import { VideoHTMLAttributes } from "react";
-import { VideoBackground, Container } from "./styles";
+import { VideoBackground } from "./styles";
+import BgVideo from '../../assets/videos/bg.mp4';
 
 type VideoProps = VideoHTMLAttributes<HTMLVideoElement>;
 
-export function Banner({...props}: VideoProps) {
+export function Banner({ children, ...props }: VideoProps) {
   return (
-    <VideoBackground id="bgVideo" controls preload="true" autoPlay loop muted  {...props}>
-      <source src="../../assets/videos/bg.mp4" type="video/mp4"/>
-      <Container>
-        <span>Olá</span>
-        <span>Olá</span>
-        <span>Olá</span>
-      </Container>
+    <VideoBackground autoPlay loop muted  {...props}>
+      <source src={BgVideo} type="video/mp4" />
     </VideoBackground>
   )
 }
