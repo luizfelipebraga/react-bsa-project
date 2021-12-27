@@ -2,6 +2,7 @@ import { Container, Header, Logo, Nav } from "./styles";
 import { Link } from "react-router-dom";
 import LogoImg from '../../assets/images/logo2.png';
 import { useState, useEffect } from "react";
+import { JoinButton } from "../Button";
 
 export function NavBar() {
 
@@ -38,6 +39,7 @@ export function NavBar() {
           <Link to="#">aliste-se</Link>
           <Link to="#">estatuto da bsa</Link>
           <Link to="#">contatos</Link>
+          <JoinButton>Join Discord</JoinButton>
         </Nav>
       </Header>
     </Container>

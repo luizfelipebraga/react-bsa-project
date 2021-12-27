@@ -4,15 +4,18 @@ export const Content = styled.main`
   width: 100%;
   height: 100%;
 
-  max-width: 60rem;
+  max-width: 100%;
   margin: 0 auto;
 
-  padding: 100px 0;
+  padding: 7rem 1rem;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
 
   span {
     color: #ffffff;
@@ -20,6 +23,13 @@ export const Content = styled.main`
   }
 `;
 
-export const Title = styled.span`
-  
+export const Logo = styled.img`
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 15rem;
+  margin-bottom: 3rem;
+
 `;

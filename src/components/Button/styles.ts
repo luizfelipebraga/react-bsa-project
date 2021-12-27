@@ -6,12 +6,11 @@ export const Container = styled.div`
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 3rem;
 `;
 
 export const Button = styled.a`
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 3rem;
   margin-right: 1rem;
   overflow: hidden;
   font-weight: bold;
@@ -19,11 +18,11 @@ export const Button = styled.a`
   padding: 16px 35px;
   position: relative;
   z-index: 1;
-  border: 2px solid #f55f19;
+  border: 2px solid #19b8f5;
   &:hover {
       color: #fff;
       &:before {
-          background: #f55f19;
+          background: #19aef5;
           width: 100%;
       }
   }

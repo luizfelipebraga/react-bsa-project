@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +28,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
 
   a {
+    :not(:last-child) {
       display: inline-block;
       &:after {
         content: '';
@@ -43,11 +44,12 @@ export const Nav = styled.nav`
         background: #fff;
         margin-top: 1rem;
       }
+    }
   }
 `;
 
 export const Logo = styled.img`
-  height: 4rem;
+  height: 5rem;
   transition: transform 0.2s ease-in;
   &:hover {
     transform: translateY(-3px);
