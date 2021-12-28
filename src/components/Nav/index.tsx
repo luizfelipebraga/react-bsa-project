@@ -1,7 +1,7 @@
 import { Container, Header, Logo, Nav } from "./styles";
 import { Link } from "react-router-dom";
 import LogoImg from '../../assets/images/logo2.png';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { JoinButton } from "../Button";
 
 export function NavBar() {
@@ -16,10 +16,9 @@ export function NavBar() {
   const [lastScrollPosition, setLastScrollPosition] = useState<number>(0);
 
   //Mobile
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  // const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  function changeBackground() {
-
+  const changeBackground = useCallback(() => {
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
       if (currentScrollPosition < 0) {
         return
@@ -46,18 +45,18 @@ export function NavBar() {
 
       setShowNav(verifyPosition)
       setLastScrollPosition(currentScrollPosition) 
-  }
+  }, [lastScrollPosition])
 
   useEffect(() => {
     window.addEventListener('scroll', changeBackground);
     return () => {
       window.removeEventListener('scroll', changeBackground);
     }
-  }, [lastScrollPosition, changeBackground, showNav ])
+  }, [lastScrollPosition,showNav, changeBackground ])
 
   function ScrollToTop() {
     window.scroll(0,1);
-    setIsOpen(false);
+    // setIsOpen(false);
   }
 
   return (

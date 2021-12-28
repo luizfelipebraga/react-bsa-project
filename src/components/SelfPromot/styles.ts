@@ -20,7 +20,7 @@ export const Content = styled.main`
 
   span {
     color: #ffffff;
-    font: 600 2rem 'Cinzel Decorative', sans-serif;
+    font: 600 clamp(1.8rem, 3vw, 3rem) 'Cinzel Decorative', sans-serif;
   }
 `;
 

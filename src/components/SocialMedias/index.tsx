@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
 import { Box, Container } from './styles'
-import DiscordImg from '../../assets/svgs/discord.svg';
 
 export function SocialMediasComponent() {
   return (
