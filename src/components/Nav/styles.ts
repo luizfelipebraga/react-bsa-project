@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 interface INavProps {
   navBar: boolean;
+  showNav: boolean;
 }
 
 export const Container = styled.div<INavProps>`
   width: 100%;
   position: fixed;
   transition: all .2s ease-out;
+  transform: ${({showNav}) => showNav ? 'translate3d(0, 0, 0)' : 'translate3d(0, -100%, 0)'};
   border-bottom: ${({ navBar }) => navBar && '1px solid #060728'};
   padding: ${({navBar}) => navBar? '2rem' : '1rem'};
   background: ${({ navBar }) => navBar ? '#060728' : 'transparent'};

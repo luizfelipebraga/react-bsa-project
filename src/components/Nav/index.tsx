@@ -6,16 +6,46 @@ import { JoinButton } from "../Button";
 
 export function NavBar() {
 
+  //background
   const [navBar, setNavBar] = useState<boolean>(false);
+
+  //showNav
+  const [showNav, setShowNav] = useState<boolean>(true);
+
+  //Scroll
+  const [lastScrollPosition, setLastScrollPosition] = useState<number>(0);
+
+  //Mobile
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   function changeBackground() {
-    if(window.scrollY > 10) {
-      setNavBar(true);
-    }
-    else {
-      setNavBar(false);
-    } 
+
+    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+      if (currentScrollPosition < 0) {
+        return
+      }
+
+      if(currentScrollPosition > 10) {
+        setNavBar(true);
+      }
+  
+      else {
+        setNavBar(false);
+      }
+
+      if(window.innerWidth <= 992){
+        setShowNav(true);
+        setLastScrollPosition(currentScrollPosition);
+        return
+      }
+
+      if (Math.abs(currentScrollPosition - lastScrollPosition) < 40) {
+        return
+      }
+      const verifyPosition = currentScrollPosition < lastScrollPosition
+
+      setShowNav(verifyPosition)
+      setLastScrollPosition(currentScrollPosition) 
   }
 
   useEffect(() => {
@@ -23,7 +53,7 @@ export function NavBar() {
     return () => {
       window.removeEventListener('scroll', changeBackground);
     }
-  }, [])
+  }, [lastScrollPosition, changeBackground, showNav ])
 
   function ScrollToTop() {
     window.scroll(0,1);
@@ -31,7 +61,7 @@ export function NavBar() {
   }
 
   return (
-    <Container navBar={navBar}>
+    <Container showNav={showNav} navBar={navBar}>
       <Header>
         <Link to="" onClick={ScrollToTop}><Logo src={LogoImg} alt="Logo" /></Link>
         <Nav>
