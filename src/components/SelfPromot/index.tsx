@@ -9,7 +9,7 @@ export function SelfPromotedComponent() {
         <span>Já somos mais de 7 mil membros!</span>
         <span>Venha fazer parte da maior Guilda do Star Atlas</span>
       </div>
-      
+
       <Logo src={LogoImg} alt="logo" />
 
       <JoinButton>Join Discord</JoinButton>

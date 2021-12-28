@@ -5,14 +5,18 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const Box = styled.div`
-  min-height: 85vh;
+export const Content = styled.div`
+  min-height: 100vh;
   background: linear-gradient(45deg, rgba(42, 74, 228, 0.19), rgba(0, 22, 129, 0.314));
 `;
 
-export const Content = styled.main`
+export const SectionHome = styled.section`
+    width: 100%;
+    height: 80vh;
+`;
+
+export const SectionContact = styled.section`
   width: 100%;
-  height: 100%;
-  max-width: 60rem;
-  margin: 0 auto;
+  height: 80vh;
+  background: #000;
 `;

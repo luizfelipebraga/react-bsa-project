@@ -2,18 +2,19 @@ import styled from 'styled-components';
 
 export const Content = styled.main`
   width: 100%;
-  height: 100%;
-
-  max-width: 100%;
-  margin: 0 auto;
-
-  padding: 7rem 1rem;
-
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
   >div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 3rem;
     margin-bottom: 3rem;
   }
 
@@ -24,12 +25,6 @@ export const Content = styled.main`
 `;
 
 export const Logo = styled.img`
-  display: flex;
   margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   height: 15rem;
-  margin-bottom: 3rem;
-
 `;

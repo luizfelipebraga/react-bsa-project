@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface INavProps {
+  navBar: boolean;
+}
+
+export const Container = styled.div<INavProps>`
   width: 100%;
-  padding: 3rem;
-  border-bottom: 1px solid #8a9ff9;
-  background: #00000050;
+  position: fixed;
+  transition: all .2s ease-out;
+  border-bottom: ${({ navBar }) => navBar && '1px solid #060728'};
+  padding: ${({navBar}) => navBar? '2rem' : '1rem'};
+  background: ${({ navBar }) => navBar ? '#060728' : 'transparent'};
+  z-index: 55555;
 `;
 
 export const Header = styled.header`

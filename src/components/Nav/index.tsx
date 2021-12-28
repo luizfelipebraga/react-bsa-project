@@ -31,7 +31,7 @@ export function NavBar() {
   }
 
   return (
-    <Container>
+    <Container navBar={navBar}>
       <Header>
         <Link to="" onClick={ScrollToTop}><Logo src={LogoImg} alt="Logo" /></Link>
         <Nav>

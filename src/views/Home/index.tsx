@@ -1,18 +1,25 @@
 import { Banner } from "../../components/Banner";
 import { NavBar } from "../../components/Nav";
 import { SelfPromotedComponent } from "../../components/SelfPromot";
-import { Container, Box, Content } from "./styles";
+import { WaveBottom } from "../../components/Wave";
+import { ContactPage } from "../Contato";
+import { Container, Content, SectionHome, SectionContact } from "./styles";
 
 export function Home() {
   return (
     <Container>
       <Banner />
 
-      <Box>
+      <Content>
         <NavBar />
 
-        <SelfPromotedComponent/>
-      </Box>
+        <SectionHome>
+          <WaveBottom />
+          <SelfPromotedComponent />
+        </SectionHome>
+      </Content>
+
+      <ContactPage/>
 
     </Container>
   )
