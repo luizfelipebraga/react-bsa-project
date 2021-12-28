@@ -1,17 +1,21 @@
 import { Banner } from "../../components/Banner";
 import { NavBar } from "../../components/Nav";
 import { SelfPromotedComponent } from "../../components/SelfPromot";
+import { SocialMediasComponent } from "../../components/SocialMedias";
 import { WaveBottom } from "../../components/Wave";
 import { ContactPage } from "../Contato";
-import { Container, Content, SectionHome, SectionContact } from "./styles";
+import { Container, Content, SectionHome } from "./styles";
 
 export function Home() {
   return (
     <Container>
       <Banner />
 
+
       <Content>
         <NavBar />
+        <SocialMediasComponent />
+
 
         <SectionHome>
           <WaveBottom />
@@ -19,7 +23,7 @@ export function Home() {
         </SectionHome>
       </Content>
 
-      <ContactPage/>
+      <ContactPage />
 
     </Container>
   )
