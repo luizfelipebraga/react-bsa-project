@@ -69,7 +69,7 @@ export function NavBar() {
           <Link to="#">aliste-se</Link>
           <Link to="#">estatuto da bsa</Link>
           <Link to="#">contatos</Link>
-          <JoinButton>Join Discord</JoinButton>
+          <JoinButton>Aliste-se</JoinButton>
         </Nav>
       </Header>
     </Container>
