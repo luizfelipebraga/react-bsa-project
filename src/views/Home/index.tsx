@@ -3,7 +3,8 @@ import { NavBar } from "../../components/Nav";
 import { SelfPromotedComponent } from "../../components/SelfPromot";
 import { SocialMediasComponent } from "../../components/SocialMedias";
 import { WaveBottom } from "../../components/Wave";
-import { ContactPage } from "../Contato";
+import { ContactSection } from "../Contato";
+import { AboutSection } from "../Sobre";
 import { Container, Content, SectionHome } from "./styles";
 
 export function Home() {
@@ -23,7 +24,8 @@ export function Home() {
         </SectionHome>
       </Content>
 
-      <ContactPage />
+      <AboutSection/>
+      <ContactSection />
 
     </Container>
   )

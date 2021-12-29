@@ -54,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     b, strong {
-        color: #ffb464;
+        color: #ffffff;
     }
 
     textarea {

@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-export function ContactPage() {
+export function ContactSection() {
   return (
     <Container>Olá</Container>
   )
