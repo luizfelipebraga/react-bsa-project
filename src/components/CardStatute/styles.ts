@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 500px;
   min-height: 300px;
-  padding: 2rem 1.75rem;
 
   cursor: pointer;
 
@@ -18,9 +17,12 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
+  width: 100%;
 `;
 
 export const Title = styled.h1`
+  padding: 2rem 1.75rem;
+  
 `;
 
 export const Description = styled.p`
