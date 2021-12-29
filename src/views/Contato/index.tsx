@@ -1,7 +1,10 @@
+import { WaveBottom } from '../../components/Wave';
 import { Container } from './styles';
 
 export function ContactSection() {
   return (
-    <Container>Olá</Container>
+    <Container>
+      
+    </Container>
   )
 }

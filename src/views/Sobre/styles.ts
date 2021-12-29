@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background-color: #0099FF;
 `;
 
@@ -14,7 +14,7 @@ export const Content = styled.div`
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   text-align: center;
 
   span {
@@ -24,7 +24,27 @@ export const Content = styled.div`
   }
 
   p {
-    color: #cfcfcf;
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    color: #f8f8f8;
+    font-size: clamp(1.1rem, 3vw, 1.8rem);
   }
+`;
+
+export const AboutGuild = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: #f9f9f9;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+  }
+`;
+
+export const Barra = styled.span`
+  display: block;
+  width: 2px;
+  height: 93px;
+  margin: 0 auto;
+  background: #fff;
 `;

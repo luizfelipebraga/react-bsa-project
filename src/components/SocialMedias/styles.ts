@@ -8,6 +8,10 @@ export const Container = styled.div`
   right: auto;
   z-index: 10;
 
+  @media(max-width: 768px) {
+    display: none;
+  }
+
 `;
 
 export const Box = styled.div`

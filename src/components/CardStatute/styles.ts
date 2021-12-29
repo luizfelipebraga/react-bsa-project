@@ -16,3 +16,12 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
+
+export const Image = styled.img`
+`;
+
+export const Title = styled.h1`
+`;
+
+export const Description = styled.p`
+`;

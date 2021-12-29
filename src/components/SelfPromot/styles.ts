@@ -9,7 +9,7 @@ export const Content = styled.main`
   flex-direction: column;
   align-items: center;
   
-  >div {
+  div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,13 @@ export const Content = styled.main`
 
   span {
     color: #ffffff;
-    font: 600 clamp(1.8rem, 3vw, 3rem) 'Cinzel Decorative', sans-serif;
+    &:first-child {
+      font: 600 clamp(1.8rem, 3vw, 3.5rem) 'Cinzel Decorative', sans-serif;
+    }
+
+    &:nth-child(2) {
+      font: 600 clamp(1.1rem, 3vw, 2.5rem) 'Cinzel Decorative', sans-serif;
+    }
   }
 `;
 

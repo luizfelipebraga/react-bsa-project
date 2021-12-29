@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+type PathProps = {
+  colorProp: string;
+}
+
 export const Container = styled.div`
   position: absolute;
   bottom: 0;
@@ -17,9 +21,5 @@ export const Container = styled.div`
     width: calc(226% + 1.3px);
     height: 171px;
     transform: rotateY(180deg);
-
-    path {
-      fill: #0099FF;
-    }
   }
 `;

@@ -4,6 +4,7 @@ import { SelfPromotedComponent } from "../../components/SelfPromot";
 import { SocialMediasComponent } from "../../components/SocialMedias";
 import { WaveBottom } from "../../components/Wave";
 import { ContactSection } from "../Contato";
+import { StatuteSection } from "../Estatuto";
 import { AboutSection } from "../Sobre";
 import { Container, Content, SectionHome } from "./styles";
 
@@ -12,19 +13,19 @@ export function Home() {
     <Container>
       <Banner />
 
-
       <Content>
         <NavBar />
         <SocialMediasComponent />
 
 
         <SectionHome>
-          <WaveBottom />
           <SelfPromotedComponent />
         </SectionHome>
+        <WaveBottom color="#0099FF" />
       </Content>
 
-      <AboutSection/>
+      <AboutSection />
+      <StatuteSection/>
       <ContactSection />
 
     </Container>

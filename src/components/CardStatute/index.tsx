@@ -1,5 +1,5 @@
 import { JoinButton } from "../Button"
-import { Container } from "./styles"
+import { Container, Image, Title, Description } from "./styles"
 
 type CardProps = {
   img: string;
@@ -11,10 +11,10 @@ type CardProps = {
 export function CardStatuteComponent({...props}: CardProps) {
   return (
     <Container>
-      <Image>{props.img}</Image>
+      <Image src={props.img} alt="imagem de bandeira"/>
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
-      <JoinButton></JoinButton>
+      <JoinButton>download</JoinButton>
     </Container>
   )
 }
