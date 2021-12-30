@@ -12,7 +12,7 @@ export const Content = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 
-  padding: 7rem 1rem;
+  padding: 7rem 4em 7rem 1rem;
 
 `;
 
