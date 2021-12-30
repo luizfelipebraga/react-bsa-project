@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-type PathProps = {
-  colorProp: string;
-}
-
 export const Container = styled.div`
   position: absolute;
   bottom: 0;
@@ -14,12 +10,11 @@ export const Container = styled.div`
   transform: rotate(180deg);
   z-index: 0;
 
-
   svg {
     position: relative;
     display: block;
     width: calc(226% + 1.3px);
-    height: 171px;
+    height: 90px;
     transform: rotateY(180deg);
   }
 `;

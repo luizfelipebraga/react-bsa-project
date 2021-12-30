@@ -1,10 +1,11 @@
-import { WaveBottom } from '../../components/Wave';
-import { Container } from './styles';
+import { Container, Title, Content } from './styles';
 
 export function ContactSection() {
   return (
     <Container>
-      
+      <Content>
+        <Title>Contato</Title>
+      </Content>
     </Container>
   )
 }
