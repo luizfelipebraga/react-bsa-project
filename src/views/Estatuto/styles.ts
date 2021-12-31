@@ -28,8 +28,12 @@ export const Grid = styled.div`
   padding: 0px;
   margin-top: 5rem;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
-  position: relative;
+  position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

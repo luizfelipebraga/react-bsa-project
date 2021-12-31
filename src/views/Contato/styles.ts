@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   background: #000;
   position: relative;
 `;
@@ -12,7 +12,7 @@ export const Content = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 
-  padding: 7rem 4em 7rem 1rem;
+  padding: 4rem 2rem 0rem 2rem; 
 
 `;
 

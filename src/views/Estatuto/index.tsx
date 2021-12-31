@@ -18,7 +18,6 @@ export function StatuteSection() {
 
         <Grid>
           <CardStatuteComponent title="Estatuto Portugu&#234;s" description={descricao} download="Baixar"/>
-          <CardStatuteComponent title="English Statute" description={description} download="Download"/>
         </Grid>
       </Content>
     </Container>

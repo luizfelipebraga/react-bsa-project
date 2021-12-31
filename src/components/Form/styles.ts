@@ -22,16 +22,18 @@ export const TextArea = styled.textarea`
   border-radius: 1rem;
 `;
 
-export const Button = styled.a`
-  background: transparent;
-  font-size: 1rem;
+export const Button = styled.input`
+  background: #fff;
+  font-size: 2rem;
   padding: 1rem;
 
-  color: #fff;
+  color: #000;
   border: 2px solid #e9e9e9;
   cursor: pointer;
 
-  transition: background 0.3s ease-in-out;
+  border-radius: 1rem;
+
+  transition: all 0.3s ease-in-out;
 
   &:focus {
     outline: none;
@@ -39,6 +41,7 @@ export const Button = styled.a`
   }
 
   &:hover {
-    background: blue;
+    color: #fff;
+    background: transparent !important;
   }
 `;

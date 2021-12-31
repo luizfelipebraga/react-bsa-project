@@ -8,7 +8,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   height: 100%;
-  padding: 80px 0;
+  padding: 80px 2rem;
   max-width: 1100px;
   margin: 0 auto;
 
@@ -25,7 +25,7 @@ export const Content = styled.div`
 
   p {
     color: #f8f8f8;
-    font-size: clamp(1.1rem, 3vw, 1.8rem);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
   }
 `;
 

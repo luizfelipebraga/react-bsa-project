@@ -34,16 +34,18 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.span`
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #fff;
   font-weight: 600;
   padding-top: 2rem;
 `;
 
 export const Description = styled.p`
-  padding: 0 1.5rem;
+  padding: 0 2rem;
+
+  text-align: left;
 
   color: rgb(199, 195, 195);
-  font-size: clamp(14px, 2vw, 10px);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   line-height: 25px;
 `;
