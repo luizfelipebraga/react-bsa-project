@@ -21,7 +21,7 @@ export function Home() {
         <SectionHome>
           <SelfPromotedComponent />
         </SectionHome>
-        <WaveBottom color="#0099FF" />
+        <WaveBottom color="#7c004e" />
       </Content>
 
       <AboutSection />

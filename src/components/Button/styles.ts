@@ -18,11 +18,11 @@ export const Button = styled.a`
   padding: 16px 35px;
   position: relative;
   z-index: 1;
-  border: 2px solid #19b8f5;
+  border: 2px solid #E60090;
   &:hover {
       color: #fff;
       &:before {
-          background: #19aef5;
+          background: #E60090;
           width: 100%;
       }
   }

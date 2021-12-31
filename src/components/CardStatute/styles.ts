@@ -5,7 +5,7 @@ export const Container = styled.div`
   min-height: 300px;
 
   transition: all 0.2s ease-in-out 0s;
-  background: rgb(24, 24, 26);
+  background: #5e023c;
   
 
   box-shadow: rgb(15 15 16 / 91%) 0px 10px 30px -15px;
@@ -45,7 +45,7 @@ export const Description = styled.p`
 
   text-align: left;
 
-  color: rgb(199, 195, 195);
+  color: #f8f8f8;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   line-height: 25px;
 `;
