@@ -69,7 +69,15 @@ export const GlobalStyle = createGlobalStyle`
     input, textarea {
         &:focus-within {
             border: 2px solid #838383;
-        }   
+        }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        color: #fff;
+        transition: all 5000s ease-in-out 0s;
     }
 
     textarea, select, input, textarea, select:focus, button{
