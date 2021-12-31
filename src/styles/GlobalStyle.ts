@@ -66,7 +66,13 @@ export const GlobalStyle = createGlobalStyle`
         resize: none;
     }
 
-    textarea, select, input, input:focus, textarea:focus, select:focus, button{
+    input, textarea {
+        &:focus-within {
+            border: 2px solid #838383;
+        }   
+    }
+
+    textarea, select, input, textarea, select:focus, button{
         border: 0;
         outline: none;
     }

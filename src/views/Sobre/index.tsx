@@ -14,23 +14,23 @@ export function AboutSection() {
             <p>Pessoas na Guilda</p>
           </div>
 
-          <Barra/>
-          
+          <Barra />
+
           <div>
             <span>800+</span>
             <p>Membros verificados no Discord</p>
           </div>
 
-          <Barra/>
+          <Barra />
 
           <div>
             <span>1</span>
             <p>Facção</p>
           </div>
         </AboutGuild>
-
       </Content>
-      <WaveBottom color="#7c004e"/>
+
+      <WaveBottom color="#7c004e" />
 
     </Container>
   )
