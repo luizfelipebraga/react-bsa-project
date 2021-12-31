@@ -47,4 +47,9 @@ export const Barra = styled.span`
   height: 93px;
   margin: 0 auto;
   background: #fff;
+
+
+  @media(max-width: 768px) {
+    display: none;
+  }
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 100%;
   min-height: 80vh;
-  background: #000;
+  background: #0c193f;
   position: relative;
 `;
 
