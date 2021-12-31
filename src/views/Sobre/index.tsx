@@ -5,7 +5,7 @@ export function AboutSection() {
   return (
     <Container>
       <Content>
-        <span>Star Atlas BR</span>
+        <span> Brazillian Star Atlas</span>
         <p>A <strong>MAIOR</strong> aliança brasileira no StarAtlas, venha fazer parte e divirta-se.</p>
 
         <AboutGuild>
