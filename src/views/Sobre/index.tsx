@@ -30,7 +30,7 @@ export function AboutSection() {
         </AboutGuild>
 
       </Content>
-      <WaveBottom color="#0c193f"/>
+      <WaveBottom color="#7c004e"/>
 
     </Container>
   )

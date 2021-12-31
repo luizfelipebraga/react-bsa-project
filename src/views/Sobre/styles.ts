@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 100%;
   height: 70vh;
-  background-color: #7c004e; // 0099FF azul escuro  - 7c004e  rosa //;
+  background-color: #0c193f; // 0099FF azul escuro  - 7c004e  rosa //;
 `;
 
 export const Content = styled.div`

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 90vh;
-  background: #0c193f;
+  background: #7c004e; // 7c004e 0c193f;
 
   @media(max-width: 1024px) {
     min-height: 100vh;
