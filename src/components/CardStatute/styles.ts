@@ -5,10 +5,10 @@ export const Container = styled.div`
   min-height: 300px;
 
   transition: all 0.2s ease-in-out 0s;
-  background: #5e023c;
+  /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
+  background-image: linear-gradient(45deg, #3e92cc 0%, #0c193f 100%);
   
-
-  box-shadow: rgb(15 15 16 / 91%) 0px 10px 30px -15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 3px;
 
   display: flex;

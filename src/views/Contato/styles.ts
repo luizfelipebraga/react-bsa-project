@@ -19,5 +19,5 @@ export const Content = styled.div`
 export const Title = styled.span`
   color: #fff;
   font-weight: 600;
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(3rem, 8vw, 6rem);
 `;

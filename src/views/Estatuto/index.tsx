@@ -8,8 +8,7 @@ export function StatuteSection() {
 
   const descricao = "Leia e esteja bem familiarizado com o ESTATUTO BSA, pois este é soberano e deve ser observado para que as propostas de OMDs sejam coerentes com o objetivo da DAC BSA, em sua missão de inclusão e favorecimento a todos os seus membros sem distinção."
   return (
-    <Container>
-
+    <Container id="estatuto">
       <WaveBottom color="#0c193f" />
 
       <Content>
@@ -20,8 +19,6 @@ export function StatuteSection() {
           <CardStatuteComponent title="Estatuto Portugu&#234;s" description={descricao} download="Baixar" />
         </Grid>
       </Content>
-
-
     </Container>
   )
 }

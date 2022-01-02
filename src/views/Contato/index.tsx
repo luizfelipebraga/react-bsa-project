@@ -3,7 +3,7 @@ import { Container, Title, Content } from './styles';
 
 export function ContactSection() {
   return (
-    <Container>
+    <Container id="contato">
       <Content>
         <Title>Contato</Title>
         <FormComponent/>
