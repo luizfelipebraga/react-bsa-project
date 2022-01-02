@@ -3,7 +3,7 @@ import { Container, Content, AboutGuild, Barra } from "./styles";
 
 export function AboutSection() {
   return (
-    <Container>
+    <Container id="sobre">
       <Content>
         <span> Brazillian Star Atlas</span>
         <p>A <strong>MAIOR</strong> aliança brasileira no StarAtlas, venha fazer parte e divirta-se.</p>
@@ -30,7 +30,7 @@ export function AboutSection() {
         </AboutGuild>
       </Content>
 
-      <WaveBottom color="#7c004e" />
+      <WaveBottom color="#3e92cc" />
 
     </Container>
   )

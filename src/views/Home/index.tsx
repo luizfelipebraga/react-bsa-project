@@ -18,7 +18,7 @@ export function Home() {
         <SocialMediasComponent />
 
 
-        <SectionHome>
+        <SectionHome id="home">
           <SelfPromotedComponent />
         </SectionHome>
         <WaveBottom color="#0c193f" />

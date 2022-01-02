@@ -1,5 +1,5 @@
 import { Container, Header, Logo, Nav } from "./styles";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import LogoImg from '../../assets/images/logo2.png';
 import { useState, useEffect, useCallback } from "react";
 import { JoinButton } from "../Button";
@@ -64,10 +64,10 @@ export function NavBar() {
       <Header>
         <Link to="" onClick={ScrollToTop}><Logo src={LogoImg} alt="Logo" /></Link>
         <Nav>
-          <Link to="#">Bsa</Link>
-          <Link to="#">aliste-se</Link>
-          <Link to="#">estatuto da bsa</Link>
-          <Link to="#">contatos</Link>
+          <Link to="/#home">Bsa</Link>
+          <Link to="/#home">aliste-se</Link>
+          <Link to="/#estatuto">estatuto da bsa</Link>
+          <Link to="/#contato">contatos</Link>
           <JoinButton>Aliste-se</JoinButton>
         </Nav>
       </Header>
