@@ -59,12 +59,16 @@ export function NavBar() {
     // setIsOpen(false);
   }
 
+  function ScrollToEstatuto() {
+    window.scroll(0,1500);
+  }
+
   return (
     <Container showNav={showNav} navBar={navBar}>
       <Header>
         <Link to="" onClick={ScrollToTop}><Logo src={LogoImg} alt="Logo" /></Link>
         <Nav>
-          <Link to="/#home">Bsa</Link>
+          <Link to="/#home" onClick={ScrollToTop}>Bsa</Link>
           <Link to="/#home">aliste-se</Link>
           <Link to="/#estatuto">estatuto da bsa</Link>
           <Link to="/#contato">contatos</Link>
