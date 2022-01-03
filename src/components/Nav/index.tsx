@@ -69,10 +69,10 @@ export function NavBar() {
         <Link to="" onClick={ScrollToTop}><Logo src={LogoImg} alt="Logo" /></Link>
         <Nav>
           <Link to="/#home" onClick={ScrollToTop}>Bsa</Link>
-          <Link to="/#home">aliste-se</Link>
+          <a href="https://discord.gg/Ha22uZ6S3J" target="_blank" rel="noreferrer">aliste-se</a>
           <Link to="/#estatuto">estatuto da bsa</Link>
           <Link to="/#contato">contatos</Link>
-          <JoinButton>Aliste-se</JoinButton>
+          <JoinButton href="https://discord.gg/Ha22uZ6S3J" target="_blank" rel="noreferrer">Aliste-se</JoinButton>
         </Nav>
       </Header>
     </Container>

@@ -12,7 +12,7 @@ export function SelfPromotedComponent() {
 
       <Logo src={LogoImg} alt="logo" />
 
-      <JoinButton>Aliste-se</JoinButton>
+      <JoinButton href="https://discord.gg/Ha22uZ6S3J" target="_blank" rel="noreferrer">Aliste-se</JoinButton>
     </Content>
   )
 }
