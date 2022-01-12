@@ -3,9 +3,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 interface INavProps {
-  navBar: boolean;
+  navBar?: boolean;
   isOpen?: boolean;
-  showNav: boolean;
+  showNav?: boolean;
 }
 
 export const Container = styled.div<INavProps>`
@@ -14,13 +14,16 @@ export const Container = styled.div<INavProps>`
   transition: all .2s ease-out;
   transform: ${({showNav}) => showNav ? 'translate3d(0, 0, 0)' : 'translate3d(0, -100%, 0)'};
   border-bottom: ${({ navBar }) => navBar && '1px solid #060728'};
-  padding: 1rem;
   background: ${({ navBar }) => navBar ? '#060728' : 'transparent'};
   z-index: 55555;
+
+  @media (max-width: 1400px) {
+    background: #060728;
+  }
 `;
 
-export const Header = styled.header`
-  max-width: 900px;
+export const Header = styled.header<INavProps>`
+  max-width:${({isOpen}) => !isOpen? 'auto' : '900px'};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,11 +36,36 @@ export const Header = styled.header`
   }
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<INavProps>`
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    z-index: 55555;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1400px) {
+      z-index: 5555;
+      display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background: #060728;
+      padding: 0 0 1rem 0;
+      height: 100vh;
+    }
+  }
 
   a {
     :not(:last-child) {
@@ -66,6 +94,10 @@ export const Logo = styled.img`
   &:hover {
     transform: translateY(-3px);
   }
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
 `;
 
 export const HambuerIcon = styled(GiHamburgerMenu)`
@@ -73,10 +105,10 @@ export const HambuerIcon = styled(GiHamburgerMenu)`
   fill: #fff;
   height: 2rem;
   cursor: pointer;
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
     display: block;
+    margin: .8rem 0;
     align-items: right;
-    margin-right: 2rem;
   }
 `;
 
@@ -85,9 +117,9 @@ export const CloseIcon = styled(AiOutlineClose)`
   fill: #fff;
   height: 3rem;
   cursor: pointer;
-  @media (max-width: 1024px) {
+  @media (max-width: 1400px) {
     display: block;
+    margin: 1rem 0;
     align-items: right;
-    margin-right: 2rem;
   }
 `;

@@ -55,7 +55,7 @@ export function NavBar() {
 
   function ScrollToTop() {
     window.scroll(0, 1);
-    // setIsOpen(false);
+    setIsOpen(false);
   }
 
   return (
@@ -64,31 +64,33 @@ export function NavBar() {
         <Link to="" onClick={ScrollToTop}>
           <Logo src={LogoImg} alt="Logo" />
         </Link>
-        <Nav>
+        <Nav isOpen={isOpen}>
           {isOpen ? (
             <CloseIcon size={30} onClick={() => setIsOpen(!isOpen)} />
           ) : (
             <HambuerIcon size={30} onClick={() => setIsOpen(!isOpen)} />
           )}
-          <Link to="/#home" onClick={ScrollToTop}>
-            Bsa
-          </Link>
-          <a
-            href="https://discord.gg/Ha22uZ6S3J"
-            target="_blank"
-            rel="noreferrer"
-          >
-            aliste-se
-          </a>
-          <Link to="/#estatuto">estatuto da bsa</Link>
-          <Link to="/#contato">contatos</Link>
-          <JoinButton
-            href="https://discord.gg/Ha22uZ6S3J"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Aliste-se
-          </JoinButton>
+          <ul>
+            <Link to="/#home" onClick={ScrollToTop}>
+              Bsa
+            </Link>
+            <a
+              href="https://discord.gg/Ha22uZ6S3J"
+              target="_blank"
+              rel="noreferrer"
+            >
+              aliste-se
+            </a>
+            <Link to="/#estatuto" onClick={() => setIsOpen(false)}>estatuto da bsa</Link>
+            <Link to="/#contato" onClick={() => setIsOpen(false)}>contatos</Link>
+            <JoinButton
+              href="https://discord.gg/Ha22uZ6S3J"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Aliste-se
+            </JoinButton>
+          </ul>
         </Nav>
       </Header>
     </Container>
