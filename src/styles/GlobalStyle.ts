@@ -39,10 +39,21 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     html, body, #root {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
         min-height: 100vh;
         width : 100%;
         overflow-x: hidden;
         scroll-behavior: smooth;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    ::-webkit-scrollbar {
+    display: none;
     }
 
     section {

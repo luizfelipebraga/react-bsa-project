@@ -23,11 +23,15 @@ export const Container = styled.div<INavProps>`
 `;
 
 export const Header = styled.header<INavProps>`
-  max-width:${({isOpen}) => !isOpen? 'auto' : '900px'};
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media (max-width: 1400px) {
+    max-width: auto;
+  }
 
   span, a {
     color: #ffffff;
@@ -82,7 +86,6 @@ export const Nav = styled.nav<INavProps>`
       &:hover::after {
         width: 100%;
         background: #fff;
-        margin-top: 1rem;
       }
     }
   }
