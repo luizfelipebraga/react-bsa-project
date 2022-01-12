@@ -12,6 +12,5 @@ export const Content = styled.div`
 
 export const SectionHome = styled.section`
   width: 100%;
-  height: 80vh;
   padding: 0 1rem;
 `;

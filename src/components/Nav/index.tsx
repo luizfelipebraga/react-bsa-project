@@ -59,10 +59,6 @@ export function NavBar() {
     // setIsOpen(false);
   }
 
-  function ScrollToEstatuto() {
-    window.scroll(0,1500);
-  }
-
   return (
     <Container showNav={showNav} navBar={navBar}>
       <Header>

@@ -9,7 +9,7 @@ export const Form = styled.form`
   max-width: 700px;
   margin: 0 auto;
 
-  margin-top: 5rem;
+  margin-top: 2rem;
   
 `;
 

@@ -102,19 +102,19 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (min-width: 1600px) {
         html {
-            font-size: 92%;
+            font-size: 90%;
         }
     }
 
     @media (max-width: 1200px) {
         html {
-            font-size: 85%;
+            font-size: 82%;
         }
     }
 
     @media (max-width: 1024px) {
         html {
-            font-size: 80%;
+            font-size: 75%;
         }
     }
 
