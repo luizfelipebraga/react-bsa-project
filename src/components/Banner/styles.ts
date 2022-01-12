@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const VideoBackground = styled.video`
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  min-height: 200vh;
   left: 50%;
   top: 50%;
   object-fit: cover;

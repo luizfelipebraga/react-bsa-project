@@ -1,7 +1,10 @@
 import styled from 'styled-components';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 interface INavProps {
   navBar: boolean;
+  isOpen?: boolean;
   showNav: boolean;
 }
 
@@ -11,7 +14,7 @@ export const Container = styled.div<INavProps>`
   transition: all .2s ease-out;
   transform: ${({showNav}) => showNav ? 'translate3d(0, 0, 0)' : 'translate3d(0, -100%, 0)'};
   border-bottom: ${({ navBar }) => navBar && '1px solid #060728'};
-  padding: ${({navBar}) => navBar && '1rem'};
+  padding: 1rem;
   background: ${({ navBar }) => navBar ? '#060728' : 'transparent'};
   z-index: 55555;
 `;
@@ -62,5 +65,29 @@ export const Logo = styled.img`
   transition: transform 0.2s ease-in;
   &:hover {
     transform: translateY(-3px);
+  }
+`;
+
+export const HambuerIcon = styled(GiHamburgerMenu)`
+  display: none;
+  fill: #fff;
+  height: 2rem;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    display: block;
+    align-items: right;
+    margin-right: 2rem;
+  }
+`;
+
+export const CloseIcon = styled(AiOutlineClose)`
+  display: none;
+  fill: #fff;
+  height: 3rem;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    display: block;
+    align-items: right;
+    margin-right: 2rem;
   }
 `;
