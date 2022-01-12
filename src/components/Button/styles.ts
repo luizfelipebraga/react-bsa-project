@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface ButtonProps {
+  white: boolean;
+}
+
 export const Container = styled.div`
   display: block;
   text-align: center;
@@ -8,7 +12,7 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Button = styled.a`
+export const Button = styled.a<ButtonProps>`
   text-decoration: none;
   font-size: 3rem;
   margin-right: 1rem;
@@ -18,11 +22,11 @@ export const Button = styled.a`
   padding: 16px 35px;
   position: relative;
   z-index: 1;
-  border: 2px solid #E60090;
+  border: ${({white}) => white ? '2px solid #fff' : '2px solid #E60090'};
   &:hover {
       color: #fff;
       &:before {
-          background: #E60090;
+          background: #ba8134;
           width: 100%;
       }
   }

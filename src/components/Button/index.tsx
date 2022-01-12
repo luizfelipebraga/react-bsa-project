@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button, Container } from "./styles";
 
 type ProjectProps = {
@@ -6,12 +7,29 @@ type ProjectProps = {
   target?: string;
   rel?: string;
   children: React.ReactNode;
-}
+};
 
-export function JoinButton({ href, target, type, rel, children, ...props }: ProjectProps) {
+export function JoinButton({
+  href,
+  target,
+  type,
+  rel,
+  children,
+  ...props
+}: ProjectProps) {
+
+  const white:boolean =  true;
   return (
     <Container>
-      <Button href={href} target={target} rel="noreferrer">{children}</Button>
+      <Button
+        white={white}
+        href={href}
+        target={target}
+        rel="noreferrer"
+        {...props}
+      >
+        {children}
+      </Button>
     </Container>
-  )
+  );
 }
