@@ -52,10 +52,6 @@ export const GlobalStyle = createGlobalStyle`
         scrollbar-width: none;
     }
 
-    ::-webkit-scrollbar {
-    display: none;
-    }
-
     section {
         position: relative;
     }
