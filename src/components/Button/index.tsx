@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button, Container } from "./styles";
 
 type ProjectProps = {

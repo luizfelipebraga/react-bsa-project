@@ -9,14 +9,13 @@ export function NavBar() {
   const [navBar, setNavBar] = useState<boolean>(false);
 
   //showNav
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showNav, setShowNav] = useState<boolean>(true);
 
   //Scroll
   const [lastScrollPosition, setLastScrollPosition] = useState<number>(0);
 
   //Mobile
-  // const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const changeBackground = useCallback(() => {
     const currentScrollPosition =
@@ -43,6 +42,7 @@ export function NavBar() {
     const verifyPosition = currentScrollPosition < lastScrollPosition;
 
     setShowNav(verifyPosition);
+    setIsOpen(false);
     setLastScrollPosition(currentScrollPosition);
   }, [lastScrollPosition]);
 
